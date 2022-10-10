@@ -4,8 +4,8 @@ const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.json()); //This will accept json request
-app.use(bodyParser.urlencoded({ extended: true}));
+// app.use(bodyParser.json()); //This will accept json request
+// app.use(bodyParser.urlencoded({ extended: true}));
 
 //Middlewares
 app.use(cors());
@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname, "css")))
 app.use(express.static(path.join(__dirname, "images")))
 app.use(express.static(path.join(__dirname, "js")))
 app.use(express.static(path.join(__dirname, "lib")))
+app.use(express.static(path.join(__dirname, "firebase")))
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/pages/index.html")
@@ -21,8 +22,9 @@ app.get("/", (req, res) => {
 app.get("/aboutUs", (req, res) => {
     res.sendFile(__dirname + "/pages/aboutUs.html")
 })
+
 app.get("/careers", (req, res) => {
-    res.sendFile(__dirname + "/pages/careers.html")
+    res.sendFile(__dirname + "/pages/careerPage.html")
 })
 
 

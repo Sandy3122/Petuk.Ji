@@ -634,6 +634,15 @@ hr{
     margin: 0 !important;
 }
 
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    display: none;
+}
+
 
  /*** Footer ***/
 .footer{
