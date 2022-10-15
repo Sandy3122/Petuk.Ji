@@ -56,7 +56,7 @@ body{
 
 
 /*** Logo ***/
-.bg-dark{
+.footer{
     background-color: #0F172B !important;
 }
 .about .bg-dark {
@@ -255,9 +255,6 @@ body{
     max-height: 45px;
 }
 
-.bg-dark{
-    background: var(--dark) !important;
-}
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-dark {
