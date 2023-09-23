@@ -5,6 +5,11 @@
     --dark: #0F172B;
 }
 
+.--gray-dark,
+.badge-dark{
+    background-color: #0F172B !important;    
+}
+
 *{
     box-sizing: border-box;
 }
@@ -293,6 +298,12 @@ body{
     }
 }
 
+/* Background color for screens less than or equal to 768px */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #0F172B !important;
+    }
+}
 
 
 /*** Hero Header ***/
